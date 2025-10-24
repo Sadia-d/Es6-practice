@@ -25,8 +25,43 @@ const add = (num1 ,num2=5)=>{
 
 // problem -4 :
 
-let friends = ['Baishakhi','Sumaiya','Dipa','Pinky','Ayesha'];
 
-const friendsArr = arr =>{
-     console.log(arr)
+
+const friendsArr = array =>{
+     let newArray = [];
+     for(let arr of array){
+        let length = arr.length;
+          if(length % 2 === 0){
+               newArray.push(arr)
+          }
+      
+     }
+     // return newArray
 }
+
+// console.log(friendsArr(['Baishakhi','Sumaiya','Dipa','Pinky','Ayesha']))
+
+// problem - 5 ;
+
+const square = array =>{
+     let sum = 0;
+     for(let arr of array){
+          let squareNum = arr * arr;
+          sum += squareNum
+     }
+     let avarage = sum / array.length;
+     return avarage
+}
+
+// console.log(square([1,2,3,4]));
+
+
+// problem 6 : 
+
+const getMax = (arr1 , arr2)=>{
+     let marge = [...arr1 ,...arr2];
+     let max = Math.max(...marge);
+     return max
+     
+}
+console.log(getMax([1,2,3],[4,7,2]))
