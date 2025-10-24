@@ -5,10 +5,28 @@ const multiply = (num1 ,num2 , num3)=>{
 }
 // console.log(multiply(2,3,4));
 
-/// problem 1 : write the the sentence in three lines and print the result . I am web developer . I love code . I love to eat biriany.
+/// problem 2 : write the the sentence in three lines and print the result . I am web developer . I love code . I love to eat biriany.
 
 const sentence = `I am web developer. 
 I love code. 
 I love to eat biriany.`
 
 // console.log(sentence);
+
+
+// problem 3: default perameter
+
+const add = (num1 ,num2=5)=>{
+     return num1 + num2
+}
+
+// console.log(add(4));
+
+
+// problem -4 :
+
+let friends = ['Baishakhi','Sumaiya','Dipa','Pinky','Ayesha'];
+
+const friendsArr = arr =>{
+     console.log(arr)
+}
