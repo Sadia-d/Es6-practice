@@ -78,10 +78,63 @@ let data2 = {
     ]
 }
 
-console.log(data2.data[0].bookdetails.name)
-console.log(data2.data[0].bookCatagories)
+// console.log(data2.data[0].bookdetails.name)
+// console.log(data2.data[0].bookCatagories)
 
 //// practice- problem .........
 
 // **** convert this odd number to the even number by using array.map() function and forloop
 
+const array  = [3,5,7,9,11];
+
+// using for lop ...
+
+for(let arr of array){
+    const even = arr + 1;
+//    console.log(even)
+}
+
+// using map .........
+
+const convertEven = array.map((a) => a + 1);
+// console.log(convertEven)
+
+
+//*** return all this element which is divisible by 10 using array.filter and find  method 
+
+// using filter .....
+
+const filteredArray = [33,50,79,78,90,101,30];
+const newArray = filteredArray.filter(n => n % 10 === 0)
+// console.log(newArray);
+
+// using find ......
+
+const findNewArray = filteredArray.find(n => n % 10 === 0);
+// console.log(findNewArray); [it only gives first character]
+
+
+///*** Display the instractor name that has the position senior 
+
+const instractor =[ 
+    {name : 'Nodi' , age : 28 , position : 'senior'},
+    {name : 'Akhi' , age : 28 , position : 'junior'},
+    {name : 'Shobuj' , age : 28 , position : 'senior'},
+ ]
+
+ const display = instractor.filter((p) => p.position === 'senior');
+//  console.log(display);
+ 
+
+/// 
+
+const people = [
+    {name : 'Meena' ,age : 20},
+    {name : 'Rina' ,age : 15},
+    {name : 'Mona' ,age : 22},
+]
+
+const sum = people.reduce((acc , curr) => {
+    return acc+curr.age
+},0);
+console.log(sum);
